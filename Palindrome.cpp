@@ -11,12 +11,19 @@ int main()
   char c;
   char str [80];
   char str2 [80];
-  while (str[i])
-    {
-      cin.get(str, 80);
-      putchar (toupper(str[i]));
-      i++;
-    }
+  cin.get(str, 80);
+  
+  while (str[i]) {
+    if (!(ispunct(str[i]))) {
+	str[i] = toupper(str[i]);
+	i++;
+      }
+  }
+
+  strcpy (str2, str);
+  cout << "String 1:";
   cout << str << endl;
+  cout << "String 2:";
+  cout << str2 << endl;
   return 0;
 }
