@@ -13,14 +13,17 @@ int main()
   char str2 [80];
   cin.get(str, 80);
   
-  while (str[i]) {
+  while (str[i] > 0) {
     if (!(ispunct(str[i]))) {
-	str[i] = toupper(str[i]);
-	i++;
-      }
+      str2[i] = toupper(str[i]);
+       i++;
+	}
+    else {
+      i++;
+}
   }
 
-  strcpy (str2, str);
+  //strcpy (str2, str);
   cout << "String 1:";
   cout << str << endl;
   cout << "String 2:";
