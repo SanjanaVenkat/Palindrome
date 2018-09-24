@@ -16,11 +16,11 @@ int main()
   int k = 0;
   int len = 0;
   char c;
-  char str [80];
-  char str2 [80];
-  char str3 [80];
+  char str [81];
+  char str2 [81];
+  char str3 [81];
   //gets string entered by used
-  cin.get(str, 80);
+  cin.get(str, 81);
   //removes all punctuation and spaces from string, puts into new string
   //capitalizes string
   while (str[i] >= 0) {
